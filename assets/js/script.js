@@ -1,4 +1,6 @@
 
 $( document ).ready(function() {
-    console.log( "ready!" );
+    $("li").click(function(){
+        $(this).toggleClass("done");
+      });
 });
