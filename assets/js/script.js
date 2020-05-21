@@ -20,7 +20,7 @@ $( document ).ready(function() {
     $("input[type='text']").keypress(function(e){
         if(e.which === 13){
             let inputVal = $(this).val();
-            $('ul').append('<li><span>X</span> '+inputVal+''+'</li>');
+            $('ul').append('<li><span><i class="fas fa-trash"></i></span> '+inputVal+''+'</li>');
             $(this).val('');
         };
     });
